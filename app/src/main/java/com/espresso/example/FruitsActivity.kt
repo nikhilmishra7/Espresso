@@ -42,15 +42,15 @@ class FruitsActivity : AppCompatActivity() {
         )
 
         // Create array list of fruits
-        val fruitList = ArrayList<String?>()
+        val fruitList = ArrayList<String>()
         for (element in fruits) {
             fruitList.add(element)
         }
 
         // Create Array adapter
-        val adapter: ArrayAdapter<*> = ArrayAdapter<Any?>(
+        val adapter: ArrayAdapter<String> = ArrayAdapter(
             this, R.layout.fruit_item,
-            fruitList as List<Any?>
+            fruitList as List<String>
         )
 
         // Set adapter in list view
